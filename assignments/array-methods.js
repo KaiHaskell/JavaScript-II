@@ -506,5 +506,32 @@ runners.forEach(function(items) {
 console.log(companyNames.sort());
 
 // Problem 2
+// Add everyone who donated less than 100 dollars to the hit list. Those greedy runners will rue the day.
+let hitList = [];
+{
+  runners.forEach(function(items) {
+    if (items.donation < 100) {
+      hitList.push(`${items.first_name}` + " " + `${items.last_name}`);
+    }
+  });
+}
+
+console.log(hitList);
 
 // Problem 3
+// Uh oh! Mrs. Jodie Stawell has committed tax fraud and has used her ill-earned funds to illegally boost her donation amount!
+
+let taxFraud = runners.slice(43);
+
+runners.map(function(items)) {
+  items.donation * 10
+}
+
+
+let firstNamesAllLower = [];
+
+runners.map(function(items) {
+  return firstNamesAllLower.push(`${items.first_name}`.toLowerCase());
+});
+
+console.log(firstNamesAllLower);
